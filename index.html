@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<style>
+  
+  h1{
+    text-align: center;
+    font-weight: 500;
+    color:rgb(214, 43, 69);
+    text-decoration-line:inherit;
+    margin:0;
+    padding:0;
+    }
+  nav{
+    animation: nav-load 300ms ease-in ;
+  }
+  nav ul{
+    margin:0;
+    display:flex;
+    font-family: cursive;
+    font-size: 20px;
+  }
+  nav li{
+    padding: 10px;
+    margin:0 10px;
+    animation: nav-link-load 500ms ease-in 300ms;
+  }
+  nav li:hover{
+    background-color: #ffffff44;
+  }
+  p{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  @keyframes nav-load {
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  @keyframes nav-link-load {
+    0%{
+      transform: scale(0);
+    }
+    90%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+</style>
+<body>
+  <div class="card card-fluid bg-light">
+    <div class="container " style="font-family: Audiowide; ">
+      <h1><strong>AJ ENTERPRISES</strong></h1>
+    </div>
+  </div>
+<nav class="navbar  navbar-expand-md  bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"><img class="img-fluid"  src="logo.jpeg" alt="logo" style="width:80px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav nav-pills justify-content-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SERVICES</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#">OFFERS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TIMINGS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT US</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+<br>
+
+
+<br>
+<p class="text-align:left ">WELCOME to our website, <br> </p>
+<img src="home.png" class=" w-40 rounded-circle float-right">
+
+</body>
+</html>
+
+
